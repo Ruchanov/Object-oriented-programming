@@ -1,0 +1,21 @@
+package problem2;
+
+import java.util.Vector;
+
+public class test {
+
+	public static void main(String[] args) {
+//		//Person p = new Person("a","b");
+		//Vector<Person> v = new Vector();
+//		while(true) {
+//			Person p = new Student("a","b","oop",12,2.3);
+//			v.add(p);
+//		}
+		Person p = new Student("a","b","oop",12,2.3);
+		Person p2 = new Student("a","b","oop",12,2.3);
+		//v.add(p);
+		//v.add(p2);
+		//for(Person person : v) {
+			//person.toString();
+		//}
+}

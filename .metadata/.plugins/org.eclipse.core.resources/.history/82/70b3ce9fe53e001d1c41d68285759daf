@@ -1,0 +1,12 @@
+package lab1;
+
+import java.util.Scanner;
+
+public class test {
+	public static void main(String[] args) {
+		Temperature d = new Temperature(32,'F');
+		Scanner input = new Scanner(System.in);
+		System.out.println(d.getCelsius());
+		System.out.println(d.getFahrenheit());
+	}
+}

@@ -1,0 +1,22 @@
+package test;
+
+import java.util.Scanner;
+
+public class quadraticequation {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int a = input.nextInt();
+		int b = input.nextInt();
+		int c = input.nextInt();
+		int D = pow(b)-4*a*c;
+		if(D<0>) {
+			System.out.println("Error");
+		}else if(D == 0) {
+			System.out.println(-b/2*a);
+		}else {
+			int x = (-b + sqrt(D))/2*a;
+			int y = (-b - sqrt(D))/2*a;
+			System.out.println(x,y);
+		}
+	}
+}

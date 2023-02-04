@@ -1,0 +1,12 @@
+package test;
+
+import java.util.Scanner;
+
+public class balance {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		float money = input.nextFloat();
+		float percent = input.nextFloat();
+		System.out.print(money + percent * money);
+	}
+}

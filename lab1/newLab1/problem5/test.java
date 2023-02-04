@@ -1,0 +1,64 @@
+package problem5;
+
+import java.util.Scanner;
+
+import java.util.Vector;
+
+public class test {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+//		if(s.equals("B")) {
+//			dd.kidnap(new Person(Gender.Boy,age));
+//		}
+		Person p = new Person(Gender.Boy,23);
+		Person p2 = new Person(Gender.Girl,15);
+		Dragon d = new IDragon();
+		Dragon dd = new Dragon();
+		
+		Vector<Dragon> v = new Vector<>();
+		v.add(d);
+		v.add(dd);
+		for(Dragon i : v) {
+			d.kidnap(p);
+		}
+		String s = input.nextLine();
+		for(Dragon i : v) {
+			if(i instanceof IDragon) {
+				IDragon yaslan = (IDragon)i;
+				yaslan.printCoolnessLevel();
+			}
+			for(int j = 0; j < s.length(); j++) {
+				int age = input.nextInt();
+				i.kidnap(new Person(s.charAt(j)=='B'?Gender.Boy:Gender.Girl,age));
+				
+			}
+		}
+		
+			
+			
+		
+//		for(int i = 0; i < s.length();i++) {
+//			if(s.charAt(i) == 'B') {
+//				v.add(new Person(Gender.Boy));
+//			}else {
+//				d.kidnap(new Person(Gender.Girl));
+//			}
+//		}
+//		for(int i = 0; i < s.length();i++) {
+//			if(s.charAt(i) == 'B') {
+//				d.kidnap(new Person(Gender.Boy));
+//			}else {
+//				d.kidnap(new Person(Gender.Girl));
+//			}
+//		}
+//		if(d.wiilDragonEatOrNot()) {
+//			System.out.print("YES");
+//		}else {
+//			System.out.print("NO");
+//		}
+		
+
+	}
+
+}

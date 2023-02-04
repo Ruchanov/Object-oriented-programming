@@ -1,0 +1,15 @@
+package lab1;
+
+import java.util.Scanner;
+
+public class test {
+	public static void main(String[] args) {
+//		Temperature d = new Temperature(32,'F');
+//		Scanner input = new Scanner(System.in);
+//		System.out.println(d.getCelsius());
+//		System.out.println(d.getFahrenheit());
+		Car c  = new Car("nissan",Colour.Black);
+		System.out.println(c.expenditure(2.5, 20.2));
+		System.out.println(c.expenditure(2, 20));
+	}
+}

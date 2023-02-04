@@ -1,0 +1,46 @@
+package test;
+
+import java.util.Scanner;
+
+public class hello {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int grade;
+		while(grade =input.nextLine()){
+			if(Integer.parselnt(grade) == "exit") {
+				break;
+			}else {
+				if(100>=grade && grade >= 95) {
+					System.out.println("A");
+				}
+				if(94>=grade && grade >= 90) {
+					System.out.println("A-");
+				}
+				if(89>=grade && grade >= 85) {
+					System.out.println("B+");
+				}
+				if(84>=grade && grade >= 80) {
+					System.out.println("B");
+				}
+				if(79>=grade && grade >= 75) {
+					System.out.println("B-");
+				}
+				if(74>=grade && grade >= 70) {
+					System.out.println("C+");
+				}if(69>=grade && grade >= 65) {
+					System.out.println("C");
+				}if(64>=grade && grade >= 60) {
+					System.out.println("C-");
+				}if(59>=grade && grade >= 55) {
+					System.out.println("D+");
+				}if(50>=grade) {
+					System.out.println("F");
+				}
+			}
+		}
+		
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package lab1;
+
+public class Car {
+	final String model;
+	static Colour col;
+	int fuel;
+	int dist;
+	
+	Car(String m,Colour col){
+		this.model = m;
+		this.col = Colour.col;
+	}
+	double expenditure(int fuel, int dist) {
+		return fuel/dist*100;
+	}
+	double expenditure(double fuel, double dist) {
+		return fuel/dist*100;
+	}
+	
+	
+}

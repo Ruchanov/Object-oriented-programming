@@ -1,0 +1,6 @@
+package lab1;
+
+public class Car {
+	final String model;
+	static 
+}

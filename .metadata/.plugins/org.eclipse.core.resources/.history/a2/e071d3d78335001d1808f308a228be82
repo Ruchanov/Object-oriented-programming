@@ -1,0 +1,10 @@
+package practice2;
+
+public class test {
+	public static void main(String[] args) {
+		Student std = new Student("Darina","22dsvf",2021);
+		System.out.println(std.getName());
+		System.out.println(std.getId());
+		//System.out.println(std.hel());
+	}
+}
